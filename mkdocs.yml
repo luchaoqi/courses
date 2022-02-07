@@ -1,0 +1,19 @@
+site_name: Courses
+docs_dir: .
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    - navigation.indexes # really user-friendly feature
+    - navigation.top
+
+repo_url: https://github.com/luchaoqi/courses
+
+plugins:
+  - search
+  # external extensions
+  - same-dir
+  - section-index
+
+
+# dev_addr: localhost:8005
