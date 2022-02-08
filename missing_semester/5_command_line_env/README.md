@@ -1,4 +1,4 @@
-# Takeaways
+## Takeaways
 
 ```
 # job control
@@ -84,7 +84,7 @@ Host vs
 
 
 
-# Exercises
+## Exercises
 
 ```
 sleep 60 &

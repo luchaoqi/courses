@@ -1,8 +1,8 @@
-# Takeaways
+## Takeaways
 
 [Git 101](https://luchaoqi.com/blog/Git-101/)
 
-# Exercices
+## Exercices
 
 ```zsh
 # zsh using git plugin

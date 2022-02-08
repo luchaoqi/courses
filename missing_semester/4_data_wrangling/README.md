@@ -1,4 +1,4 @@
-# Takeaways
+## Takeaways
 
 ```
 cat /usr/share/dict/words | grep ".*a.*a.*a" | grep -v "'s$" | sed -E "s/.*(..)/\1/" | sort | uniq -c | sort -n | tail -n3 | awk '{print $2}'

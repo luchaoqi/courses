@@ -21,13 +21,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       # check shell (tho I peresonally prefer setting shellcheck in pre-commit)
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@master
         with:
           severity: error
-      
+
       # for mkdocs
       - name: Set up Python 3.x
         uses: actions/setup-python@v2
@@ -38,7 +38,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      
+
       - name: Deploy MkDocs
         uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
         env:
