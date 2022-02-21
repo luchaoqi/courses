@@ -17,6 +17,7 @@ Resources:
 [Ivan-Kim/MIT-missing-semester: Complete solutions for 2020 MIT Missing Semester course](https://github.com/Ivan-Kim/MIT-missing-semester)
 
 ```bash
+for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
 for file in [0-9]; do mv "$file" "exercise_$file"; done;
 for file in exercise_*; do mv "$file" "${file#exercise_}"; done;
 ```

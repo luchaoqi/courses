@@ -8,6 +8,9 @@ theme:
     - navigation.top
 
 repo_url: https://github.com/luchaoqi/courses
+# leave empty to disable edit button
+# https://www.mkdocs.org/user-guide/configuration/#edit_uri
+edit_uri: ''
 
 plugins:
   - search

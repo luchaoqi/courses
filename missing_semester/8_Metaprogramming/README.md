@@ -8,11 +8,7 @@
 - *minor*: API has new, backwards-compatible changes
 - *major*: API has backwards-incompatible change
 
-
-
 [Specifying Dependencies - The Cargo Book (rust-lang.org)](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
-
-
 
 ```bash
 # Caret requirements
@@ -38,11 +34,7 @@
 1.2.* := >=1.2.0, <1.3.0
 ```
 
-
-
 ## Make
-
-
 
 manual: [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/)
 
@@ -60,13 +52,9 @@ TLDR:
 
 [A Simple Makefile Tutorial (colby.edu)](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
-
-
-
-
 `Makefile`
 
-
+`<mark>` Note that order of entries in Makefile matters `</mark>`
 
 ```makefile
 paper.pdf: paper.tex plot-data.png
@@ -81,17 +69,11 @@ clean:
 	git ls-files -o | xargs rm -f
 ```
 
-
-
 similar command from [pre-commit](https://pre-commit.com/index.html#cli)
 
-> `git ls-files -- '*.py' | xargs pre-commit run --files`: run all hooks against all `*.py` files in the repository.
-
-
+`git ls-files -- '*.py' | xargs pre-commit run --files`: run all hooks against all `*.py` files in the repository.
 
 `.git/hooks/pre-commit`
-
-
 
 ```bash
 #!/bin/sh
@@ -120,10 +102,6 @@ if ! make paper.pdf ; then
     exit 1
 fi
 ```
-
-
-
-
 
 ## Github workflows - No Jekyll
 
