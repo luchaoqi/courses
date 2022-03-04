@@ -34,9 +34,7 @@
 1.2.* := >=1.2.0, <1.3.0
 ```
 
-## Make
-
-manual: [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/)
+## Make:  [Top (GNU make)](https://www.gnu.org/software/make/manual/html_node/)
 
 especially: [Automatic Variables (GNU make)](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables)
 
@@ -44,17 +42,21 @@ TLDR:
 
 [Makefile Tutorial By Example](https://makefiletutorial.com/)
 
-> ## Arguments to make
->
 > There's a nice [list of options](http://www.gnu.org/software/make/manual/make.html#Options-Summary) that can be run from make. Check out `--dry-run`, `--touch`, `--old-file`.
 >
 > You can have multiple targets to make, i.e. `make clean run test` runs the `clean` goal, then `run`, and then `test`.
 
 [A Simple Makefile Tutorial (colby.edu)](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
-`Makefile`
+<mark>Note that order of entries in Makefile matters - it begins the first rule by default, then the rest is dependencies oriented. That said, if some latter targets are not dependencies of previous rules, they might not be executed </mark>
 
-`<mark>` Note that order of entries in Makefile matters `</mark>`
+Some mistake I made: [<mark>c - How do I make Makefile to recompile only changed files? - Stack Overflow </mark>](https://stackoverflow.com/questions/7815400/how-do-i-make-makefile-to-recompile-only-changed-files)
+
+In short, makefile treat target name as file name.
+
+If no target files exist: it will recompile it.
+
+If target files exist: it won't recompile it.
 
 ```makefile
 paper.pdf: paper.tex plot-data.png

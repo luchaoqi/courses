@@ -1,0 +1,41 @@
+Mainly linear models like linear regression / logistic regression
+
+Gradient Descent requires **simultaneous** update - updating all parameters at the same time using the same learning rate instead of updating one parameter first, and then use updated parameter to calculate another parameter.
+
+![](https://i.ibb.co/Lk6chns/image.png)
+
+
+
+Logistic regression model - feeding linear regression model into sigmoid function:
+$$
+\boldsymbol{x}=\{x_0,x_1,x_2,...,x_M\} \\
+\boldsymbol{\beta}=\{\beta_0,\beta_1,\beta_2,...,\beta_M\} \\
+p(\boldsymbol{x}) = \frac{b^{\boldsymbol{\beta} \cdot \boldsymbol{x}}}{1+b^{\boldsymbol{\beta} \cdot \boldsymbol{x}}}= \frac{1}{1+b^{-\boldsymbol{\beta} \cdot \boldsymbol{x}}}=S_b(t)
+$$
+Cost functions for above model - It has been really hard for me to memorize the cost function for logistic regression. Hopefully, the picture below helps capture the intuition of how to design cost function.
+
+![](https://i.ibb.co/2KxfZH0/image.png)
+
+![](https://i.ibb.co/Dph2n3X/image.png)
+
+$h_{\theta}x$ means **h**ypothesis of model regarding relationships between $\theta$ and $x$
+
+linear regression: $h_{\theta}x = \theta^Tx$
+
+logistic regression: $h_{\theta}x = \frac{1}{1+e^{-\theta^Tx}}$
+
+In multi-classification problem, one-vs-all provides a brute force way to solve the problem:
+
+![](https://i.ibb.co/rKrjSj9/image.png)
+
+Calculate manually in logistic regression
+
+![](https://i.ibb.co/7g2BWtk/image.png)
+
+
+
+Intuition in regularization: [Cost Function | Coursera](https://www.coursera.org/learn/machine-learning/supplement/1tJlY/cost-function)
+
+> Note generally we don't know which $\theta$ to shrink i.e. which parameter OR parameters to shrink explicitly, but we want to remove the overall influence and penalize all parameters. That's why we use $\lambda \sum\limits_{j=1}^{n} \theta_{j}^2$ in which $\lambda$ capture the intuition of the extend of penalization.
+
+![](https://i.ibb.co/pKrHrT0/image.png)

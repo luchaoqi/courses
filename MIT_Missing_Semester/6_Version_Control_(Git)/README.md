@@ -2,7 +2,7 @@
 
 [Git 101](https://luchaoqi.com/blog/Git-101/)
 
-## Exercices
+## Exercises
 
 ```zsh
 # zsh using git plugin
