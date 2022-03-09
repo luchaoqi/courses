@@ -1,4 +1,4 @@
-Mainly linear models like linear regression / logistic regression
+Mainly focused on topics like linear models like linear regression / logistic regression and neural networks
 
 Gradient Descent requires **simultaneous** update - updating all parameters at the same time using the same learning rate instead of updating one parameter first, and then use updated parameter to calculate another parameter.
 
@@ -39,3 +39,19 @@ Intuition in regularization: [Cost Function | Coursera](https://www.coursera.org
 > Note generally we don't know which $\theta$ to shrink i.e. which parameter OR parameters to shrink explicitly, but we want to remove the overall influence and penalize all parameters. That's why we use $\lambda \sum\limits_{j=1}^{n} \theta_{j}^2$ in which $\lambda$ capture the intuition of the extend of penalization.
 
 ![](https://i.ibb.co/pKrHrT0/image.png)
+
+
+
+The main motivation behind neural network is that it can introduce non-linearity into the problems that can't be solved through linear models
+
+[Examples and Intuitions I | Coursera](https://www.coursera.org/learn/machine-learning/supplement/kivO9/examples-and-intuitions-i)
+
+![](https://i.ibb.co/yPSwczT/image.png)
+
+![](https://i.ibb.co/NTWbFKX/image.png)
+
+
+
+Backpropagation - The following post, I believe, gives a better explanation: [A Step by Step Backpropagation Example – Matt Mazur](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/). The network usually starts with random initialization for all initial weights.
+
+Backpropagation provides the "formal" way to compute gradient using chain rule i.e. you know exactly where to go upfront to optimize cost function. In contrast, gradient descent is like testing all directions to find the best direction.

@@ -1,6 +1,6 @@
 [Machine Learning | Coursera](https://www.coursera.org/learn/machine-learning)
 
-As I am already familiar with machine learning before taking this course, the main purpose here is to quickly brush up on some concepts.
+As I am already familiar with machine learning before taking this course, the main purpose here is to quickly brush up on some concepts - not for programming assignments.
 
 [Practical Machine Learning — Practical Machine Learning (d2l.ai)](https://c.d2l.ai/stanford-cs329p/)
 

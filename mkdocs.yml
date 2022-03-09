@@ -14,9 +14,10 @@ edit_uri: ''
 
 plugins:
   - search
+  - awesome-pages # order items in navbar
+  # check out gitworkflow for automated scripts
   # external extensions
   - same-dir
   - section-index
-
 
 # dev_addr: localhost:8005

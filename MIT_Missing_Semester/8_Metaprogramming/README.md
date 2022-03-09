@@ -48,9 +48,9 @@ TLDR:
 
 [A Simple Makefile Tutorial (colby.edu)](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
-<mark>Note that order of entries in Makefile matters - it begins the first rule by default, then the rest is dependencies oriented. That said, if some latter targets are not dependencies of previous rules, they might not be executed </mark>
+`<mark>`Note that order of entries in Makefile matters - it begins the first rule by default, then the rest is dependencies oriented. That said, if some latter targets are not dependencies of previous rules, they might not be executed `</mark>`
 
-Some mistake I made: [<mark>c - How do I make Makefile to recompile only changed files? - Stack Overflow </mark>](https://stackoverflow.com/questions/7815400/how-do-i-make-makefile-to-recompile-only-changed-files)
+Some mistake I made: [`<mark>`c - How do I make Makefile to recompile only changed files? - Stack Overflow `</mark>`](https://stackoverflow.com/questions/7815400/how-do-i-make-makefile-to-recompile-only-changed-files)
 
 In short, makefile treat target name as file name.
 
@@ -109,4 +109,6 @@ fi
 
 For the sake of life, no Jekyll which is not newbie friendly.
 
-Use other alternatives like MkDocs etc.
+Use other alternatives like MkDocs, docsify, etc.
+
+I personally prefer docsify as mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638)

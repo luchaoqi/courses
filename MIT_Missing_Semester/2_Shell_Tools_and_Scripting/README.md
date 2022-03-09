@@ -8,6 +8,8 @@ especially:
 
 [Bash Conditional Expressions (Bash Reference Manual) (gnu.org)](https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html)
 
+[The Set Builtin (Bash Reference Manual) (gnu.org)](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
+
 [Parameter expansion [Bash Hackers Wiki] (bash-hackers.org)](https://wiki.bash-hackers.org/syntax/pe)
 
 [Manipulating Strings (tldp.org)](https://tldp.org/LDP/abs/html/string-manipulation.html)
