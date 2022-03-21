@@ -1,17 +1,21 @@
 Mainly focused on topics like linear models like linear regression / logistic regression and neural networks
 
+## Gradient Descent
+
 Gradient Descent requires **simultaneous** update - updating all parameters at the same time using the same learning rate instead of updating one parameter first, and then use updated parameter to calculate another parameter.
 
 ![](https://i.ibb.co/Lk6chns/image.png)
 
+## Logistic regression model
 
+logistic = feeding linear regression model into sigmoid function
 
-Logistic regression model - feeding linear regression model into sigmoid function:
 $$
 \boldsymbol{x}=\{x_0,x_1,x_2,...,x_M\} \\
 \boldsymbol{\beta}=\{\beta_0,\beta_1,\beta_2,...,\beta_M\} \\
 p(\boldsymbol{x}) = \frac{b^{\boldsymbol{\beta} \cdot \boldsymbol{x}}}{1+b^{\boldsymbol{\beta} \cdot \boldsymbol{x}}}= \frac{1}{1+b^{-\boldsymbol{\beta} \cdot \boldsymbol{x}}}=S_b(t)
 $$
+
 Cost functions for above model - It has been really hard for me to memorize the cost function for logistic regression. Hopefully, the picture below helps capture the intuition of how to design cost function.
 
 ![](https://i.ibb.co/2KxfZH0/image.png)
@@ -24,6 +28,10 @@ linear regression: $h_{\theta}x = \theta^Tx$
 
 logistic regression: $h_{\theta}x = \frac{1}{1+e^{-\theta^Tx}}$
 
+Another post explaining loss function in logistic regression:
+
+[Loss Function (Part II): Logistic Regression | by Shuyu Luo | Towards Data Science](https://towardsdatascience.com/optimization-loss-function-under-the-hood-part-ii-d20a239cde11)
+
 In multi-classification problem, one-vs-all provides a brute force way to solve the problem:
 
 ![](https://i.ibb.co/rKrjSj9/image.png)
@@ -32,7 +40,7 @@ Calculate manually in logistic regression
 
 ![](https://i.ibb.co/7g2BWtk/image.png)
 
-
+## Regularization
 
 Intuition in regularization: [Cost Function | Coursera](https://www.coursera.org/learn/machine-learning/supplement/1tJlY/cost-function)
 
@@ -40,7 +48,19 @@ Intuition in regularization: [Cost Function | Coursera](https://www.coursera.org
 
 ![](https://i.ibb.co/pKrHrT0/image.png)
 
+> The whole cost function consists of original cost function and an additional regularization term.
+>
+> So the larger $\lambda$ means the higher weight it has in the final cost function, meaning the regularization has higher amount of impact. Thus, in extreme case with very large regularization, the function can be underfitted.
+>
+> Likewise, the larger $C = 1/\lambda$ which is the parameter for original cost function (non regularization part) means less impact of the regularization. Thus, in extreme case with no regularization, the function is trying to do perfect job even it comes with overfitting.
 
+
+
+[machine learning - What is the influence of C in SVMs with linear kernel? - Cross Validated (stackexchange.com)](https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel)
+
+
+
+## Neural Networks
 
 The main motivation behind neural network is that it can introduce non-linearity into the problems that can't be solved through linear models
 
@@ -49,8 +69,6 @@ The main motivation behind neural network is that it can introduce non-linearity
 ![](https://i.ibb.co/yPSwczT/image.png)
 
 ![](https://i.ibb.co/NTWbFKX/image.png)
-
-
 
 Backpropagation - The following post, I believe, gives a better explanation: [A Step by Step Backpropagation Example – Matt Mazur](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/). The network usually starts with random initialization for all initial weights.
 

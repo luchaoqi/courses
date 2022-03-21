@@ -111,4 +111,6 @@ For the sake of life, no Jekyll which is not newbie friendly.
 
 Use other alternatives like MkDocs, docsify, etc.
 
-I personally prefer docsify as mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638)
+Mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638), which can be solved through: [courses/update_navigation_order.sh at main · luchaoqi/courses (github.com)](https://github.com/luchaoqi/courses/blob/main/update_navigation_order.sh)
+
+Docsify is installed through `npm` which is not installed in the server that I am currently using - don't want to install it on a industry server without `sudo`
