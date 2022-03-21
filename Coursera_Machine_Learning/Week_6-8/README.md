@@ -28,11 +28,11 @@ A: use F-score, $F_1 Score = 2\frac{PR}{P+R}$, in mathematics, this is called th
 
 The intuition of designing loss function for logistic regression should gives some clue how we design it in SVM:
 
-`<a href="https://ibb.co/Jx78zh5"><img src="https://i.ibb.co/SQnHKLR/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/SQnHKLR/image.png)](https://ibb.co/Jx78zh5)
 
-`<a href="https://ibb.co/6HD0h7x"><img src="https://i.ibb.co/CbVKd3Z/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/CbVKd3Z/image.png)](https://ibb.co/6HD0h7x)
 
-`<a href="https://ibb.co/58Vv8tH"><img src="https://i.ibb.co/zRwbRjv/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/zRwbRjv/image.png)](https://ibb.co/58Vv8tH)
 
 I think I mentioned it previously:
 
@@ -46,7 +46,7 @@ I think I mentioned it previously:
 
 So here, Andrew is trying to illustrate the case that SVM is trying to separate two classes without any errors:
 
-`<a href="https://ibb.co/bFGsDmr"><img src="https://i.ibb.co/BGYyF3g/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/BGYyF3g/image.png)](https://ibb.co/bFGsDmr)
 
 [Udacity](https://www.youtube.com/watch?v=5yzSv4jYMyI&list=PLgIPpm6tJZoShjm7r8Npia7CMsMlRWeuZ&index=1) provides another understanding of the optimization problem.
 
@@ -130,8 +130,8 @@ With Taylor Series Expansion: $e^x = f(a)+\frac {f'(a)}{1!} (x-a)+ \frac{f''(a)}
 
 We set $a = 0$ for series above and replace x with ab
 
-`<a href="https://ibb.co/4K2Bgsy"><img src="https://i.ibb.co/6r86Jvh/image.png" alt="image" border="0">``</a>`
-`<a href="https://ibb.co/zWcKTD8"><img src="https://i.ibb.co/bjhpMDH/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/6r86Jvh/image.png)](https://ibb.co/4K2Bgsy)
+[![image](https://i.ibb.co/bjhpMDH/image.png)](https://ibb.co/zWcKTD8)
 
 **So, for original coordinates that has only one dimension $x$, the new coordinates are of infinite number of dimensions.**
 
@@ -186,7 +186,7 @@ print(kmeans(A,2))
 
 When trying to determine number of K in K-Means, we can use "elbow" method.
 
-`<a href="https://imgbb.com/"><img src="https://i.ibb.co/RHXhTsK/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/RHXhTsK/image.png)](https://imgbb.com/)
 
 Similarly in PCA, when trying to determine the number of principal component for further analysis, we can use this method in scree plot.
 
@@ -255,37 +255,17 @@ The SVD decomposition is heavily linear algebra required, please read through so
 >
 > Multiplying a matrix by a scalar leaves the eigenvectors unchanged and multiplies every eigenvalue by the same scalar.
 
-{%raw%}
+$\mathbf{C} \text{(covariance matrix)}=\mathbf{X}^{\top} \mathbf{X} /(n-1)$
 
-$$
-\begin{align}
+Wikipadia on symmetric matrix: Diagonalizable symmetric covariance matrix C can be decomposed as
 
-\mathbf{C} \text{(covariance matrix)}=\mathbf{X}^{\top} \mathbf{X} /(n-1)
+$\mathbf{C}=\mathbf{V} \mathbf{L} \mathbf{V}^{\top} (1)$
 
-\\
+If we now perform singular value decomposition of X, we obtain a decomposition
 
-\text{Wikipadia on symmetric matrix: Diagonalizable symmetric covariance matrix C can be decomposed as:
-}
+$\mathbf{X}=\mathbf{U S} \mathbf{V}^{\top}$
 
-\\
-
-\mathbf{C}=\mathbf{V} \mathbf{L} \mathbf{V}^{\top} \tag{1}
-
-\\
-
-\text{If we now perform singular value decomposition of X, we obtain a decomposition}
-\\
-
- \mathbf{X}=\mathbf{U S} \mathbf{V}^{\top}
-
-\\
-
-\mathbf{C}=\mathbf{V S} \mathbf{U}^{\top} \mathbf{U S V}^{\top} /(n-1)=\mathbf{V} \frac{\mathbf{S}^{2}}{n-1} \mathbf{V}^{\top} \tag{2}
-
-\end{align}
-$$
-
-{%endraw%}
+$\mathbf{C}=\mathbf{V S} \mathbf{U}^{\top} \mathbf{U S V}^{\top} /(n-1)=\mathbf{V} \frac{\mathbf{S}^{2}}{n-1} \mathbf{V}^{\top} (2)$
 
 Compare `equation 1` vs. `equation 2`, they are the same. So there are 2 ways to get eigenvectors of covariance matrix
 
@@ -345,12 +325,12 @@ Z = fast_tsne(X, perplexity=30, initialization=PCAinit)
 
 It's a bad idea to use PCA to prevent overfitting - use PCA wisely
 
-`<a href="https://ibb.co/6m1mC3p"><img src="https://i.ibb.co/KXLXvMQ/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/KXLXvMQ/image.png)](https://ibb.co/6m1mC3p)
 
 Don't abuse it and use it only when raw data (original features) doesn't work
 
-`<a href="https://ibb.co/7tY5vdK"><img src="https://i.ibb.co/s9mGjdq/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/s9mGjdq/image.png)](https://ibb.co/7tY5vdK)
 
 When to use PCA:
 
-`<a href="https://ibb.co/y5RwMS9"><img src="https://i.ibb.co/q9nt45S/image.png" alt="image" border="0">``</a>`
+[![image](https://i.ibb.co/q9nt45S/image.png)](https://ibb.co/y5RwMS9)

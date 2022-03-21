@@ -8,12 +8,10 @@ Gradient Descent requires **simultaneous** update - updating all parameters at t
 
 ## Logistic regression model
 
-logistic = feeding linear regression model into sigmoid function
+logistic = feeding linear regression model $y = \beta \cdot x$ into sigmoid function
 
 $$
-\boldsymbol{x}=\{x_0,x_1,x_2,...,x_M\} \\
-\boldsymbol{\beta}=\{\beta_0,\beta_1,\beta_2,...,\beta_M\} \\
-p(\boldsymbol{x}) = \frac{b^{\boldsymbol{\beta} \cdot \boldsymbol{x}}}{1+b^{\boldsymbol{\beta} \cdot \boldsymbol{x}}}= \frac{1}{1+b^{-\boldsymbol{\beta} \cdot \boldsymbol{x}}}=S_b(t)
+p(x) = \frac{b^{\beta \cdot x}}{1+b^{\beta \cdot x}}= \frac{1}{1+b^{-\beta \cdot x}}=S_b(t)
 $$
 
 Cost functions for above model - It has been really hard for me to memorize the cost function for logistic regression. Hopefully, the picture below helps capture the intuition of how to design cost function.
@@ -22,7 +20,7 @@ Cost functions for above model - It has been really hard for me to memorize the 
 
 ![](https://i.ibb.co/Dph2n3X/image.png)
 
-$h_{\theta}x$ means **h**ypothesis of model regarding relationships between $\theta$ and $x$
+$h_{\theta}x$ means hypothesis of model regarding relationships between $\theta$ and $x$
 
 linear regression: $h_{\theta}x = \theta^Tx$
 
@@ -54,11 +52,7 @@ Intuition in regularization: [Cost Function | Coursera](https://www.coursera.org
 >
 > Likewise, the larger $C = 1/\lambda$ which is the parameter for original cost function (non regularization part) means less impact of the regularization. Thus, in extreme case with no regularization, the function is trying to do perfect job even it comes with overfitting.
 
-
-
 [machine learning - What is the influence of C in SVMs with linear kernel? - Cross Validated (stackexchange.com)](https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel)
-
-
 
 ## Neural Networks
 
