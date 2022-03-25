@@ -12,6 +12,8 @@ repo_url: https://github.com/luchaoqi/courses
 # https://www.mkdocs.org/user-guide/configuration/#edit_uri
 edit_uri: ''
 
+# ---------------------------------------------------------------------------- #
+#                                 enable latex                                 #
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -19,13 +21,14 @@ extra_javascript:
   - /mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+# ---------------------------------------------------------------------------- #
 
 plugins:
   - search
-  - awesome-pages # order items in navbar
+  - awesome-pages # order items in navbar using .pages
   # check out gitworkflow for automated scripts
   # external extensions
-  - same-dir
-  - section-index
+  - same-dir # use root dir as `docs_dir`
+  - section-index # render readme as index page for each directory
 
 # dev_addr: localhost:8005

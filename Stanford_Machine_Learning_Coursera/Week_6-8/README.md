@@ -28,11 +28,11 @@ A: use F-score, $F_1 Score = 2\frac{PR}{P+R}$, in mathematics, this is called th
 
 The intuition of designing loss function for logistic regression should gives some clue how we design it in SVM:
 
-[![image](https://i.ibb.co/SQnHKLR/image.png)](https://ibb.co/Jx78zh5)
+![](https://i.ibb.co/SQnHKLR/image.png)
 
-[![image](https://i.ibb.co/CbVKd3Z/image.png)](https://ibb.co/6HD0h7x)
+![](https://i.ibb.co/CbVKd3Z/image.png)
 
-[![image](https://i.ibb.co/zRwbRjv/image.png)](https://ibb.co/58Vv8tH)
+![](https://i.ibb.co/zRwbRjv/image.png)
 
 I think I mentioned it previously:
 
@@ -46,7 +46,7 @@ I think I mentioned it previously:
 
 So here, Andrew is trying to illustrate the case that SVM is trying to separate two classes without any errors:
 
-[![image](https://i.ibb.co/BGYyF3g/image.png)](https://ibb.co/bFGsDmr)
+![](https://i.ibb.co/BGYyF3g/image.png)
 
 [Udacity](https://www.youtube.com/watch?v=5yzSv4jYMyI&list=PLgIPpm6tJZoShjm7r8Npia7CMsMlRWeuZ&index=1) provides another understanding of the optimization problem.
 
@@ -130,10 +130,12 @@ With Taylor Series Expansion: $e^x = f(a)+\frac {f'(a)}{1!} (x-a)+ \frac{f''(a)}
 
 We set $a = 0$ for series above and replace x with ab
 
-[![image](https://i.ibb.co/6r86Jvh/image.png)](https://ibb.co/4K2Bgsy)
-[![image](https://i.ibb.co/bjhpMDH/image.png)](https://ibb.co/zWcKTD8)
+![](https://i.ibb.co/6r86Jvh/image.png)
+![](https://i.ibb.co/bjhpMDH/image.png)
 
 **So, for original coordinates that has only one dimension $x$, the new coordinates are of infinite number of dimensions.**
+
+**Note, like mentioned before, we are not actually projecting data into infinite number of dimensions and then try to figure out how to separate them in SVM. Instead, we plug the value into kernel function where the output (a single number) represents the relationship between two data points.**
 
 ## K-Means
 
@@ -186,7 +188,7 @@ print(kmeans(A,2))
 
 When trying to determine number of K in K-Means, we can use "elbow" method.
 
-[![image](https://i.ibb.co/RHXhTsK/image.png)](https://imgbb.com/)
+![](https://i.ibb.co/RHXhTsK/image.png)
 
 Similarly in PCA, when trying to determine the number of principal component for further analysis, we can use this method in scree plot.
 
@@ -323,14 +325,20 @@ PCAinit = X[:,:2] / np.std(X[:,0]) * .0001
 Z = fast_tsne(X, perplexity=30, initialization=PCAinit)
 ```
 
+### Don't abuse PCA
+
+The problem of PCA is that it only works well when the first 2 principal components account for most of the variation in the data
+
+[UMAP Dimension Reduction, Main Ideas!!! - YouTube](https://www.youtube.com/watch?v=eN0wFzBA4Sc)
+
 It's a bad idea to use PCA to prevent overfitting - use PCA wisely
 
-[![image](https://i.ibb.co/KXLXvMQ/image.png)](https://ibb.co/6m1mC3p)
+![](https://i.ibb.co/KXLXvMQ/image.png)
 
 Don't abuse it and use it only when raw data (original features) doesn't work
 
-[![image](https://i.ibb.co/s9mGjdq/image.png)](https://ibb.co/7tY5vdK)
+![](https://i.ibb.co/s9mGjdq/image.png)
 
 When to use PCA:
 
-[![image](https://i.ibb.co/q9nt45S/image.png)](https://ibb.co/y5RwMS9)
+![](https://i.ibb.co/q9nt45S/image.png)
