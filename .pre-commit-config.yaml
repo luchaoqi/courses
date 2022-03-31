@@ -2,14 +2,12 @@
 # `pip install pre-commit && pre-commit install && pre-commit run --all-files`
 # optional: pre-commit autoupdate
 # OR https://pre-commit.com/#automatically-enabling-pre-commit-on-repositories
-# refs
-# https://github.com/mCodingLLC/pre-commit-example-project/blob/master/.pre-commit-config.yaml
-# https://github.com/pre-commit/pre-commit-hooks/blob/master/.pre-commit-config.yaml
-# https://github.com/google/yapf/blob/main/.pre-commit-config.yaml
+# set up pre-commit for hooks that require system-level dependencies
+# https://github.com/openproblems-bio/openproblems/blob/main/.github/workflows/pre-commit.yml
 
 repos:
 -   repo: https://github.com/psf/black
-    rev: 22.1.0
+    rev: 22.3.0
     hooks:
     -   id: black
         args: [--safe]
@@ -22,6 +20,7 @@ repos:
       - id: check-json
       - id: check-added-large-files
       - id: check-yaml
+        args: [--allow-multiple-documents]
       - id: debug-statements
       - id: requirements-txt-fixer
       - id: check-merge-conflict
@@ -64,7 +63,7 @@ repos:
 # ---------------------------------------------------------------------------- #
 
 -   repo: https://github.com/hadolint/hadolint
-    rev: v2.9.3
+    rev: v2.10.0
     hooks:
       - id: hadolint-docker
 
@@ -94,6 +93,7 @@ repos:
 #                                   R-related                                  #
 # ---------------------------------------------------------------------------- #
 
+# require R installed?
 -   repo: https://github.com/lorenzwalthert/precommit
     rev: v0.2.2.9013
     hooks:

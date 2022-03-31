@@ -16,3 +16,6 @@ Text books:
 
 [ebook - The C Programming Language Ritchie & kernighan -.doc (archive.org)](https://ia802802.us.archive.org/15/items/The_C_Programming_Language/The_C_Programming_Language.pdf)
 
+Pre-requisite:
+
+<mark> The best course I have ever seen to bootstrap C: </mark> [CSE 251 Programming in C (msu.edu)](https://www.cse.msu.edu/~cse251/)
