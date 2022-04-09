@@ -5,6 +5,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+[![pages-build-deployment](https://github.com/luchaoqi/courses/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/luchaoqi/courses/actions/workflows/pages/pages-build-deployment)
+
 # Courses
 
 Some courses I am taking or already took.
