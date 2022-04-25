@@ -19,3 +19,31 @@ Text books:
 Pre-requisite:
 
 <mark> The best course I have ever seen to bootstrap C: </mark> [CSE 251 Programming in C (msu.edu)](https://www.cse.msu.edu/~cse251/)
+
+To run docker:
+
+https://hub.docker.com/repository/docker/luchaoqi/cmu-15213
+
+docker-compose.yml
+```
+version: "3"
+
+services:
+  cmu: # name of the service
+    build: .
+    image: luchaoqi/cmu-15213
+    container_name: cmu-15213
+    volumes:
+      - .:/cmu
+    restart: "no"
+    stdin_open: true  # --interactive Keep STDIN open even if not attached (docker exec -i)
+    tty: true         # --tty Allocate a pseudo-TTY (docker exec -t)
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - SYS_PTRACE
+```
+
+```
+docker-compose run --rm cmu
+```
