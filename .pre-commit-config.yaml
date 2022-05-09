@@ -19,6 +19,7 @@ repos:
       - id: check-docstring-first
       - id: check-json
       - id: check-added-large-files
+        exclude: CMU_15213
       - id: check-yaml
         args: [--allow-multiple-documents]
       - id: debug-statements
