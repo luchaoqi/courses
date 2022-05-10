@@ -12,38 +12,21 @@ Videos:
 
 Text books:
 
+<mark> Reading the text book three times makes everything easy </mark>
+
 [CSAPP-Labs/Computer Systems A Programmers Perspective (3rd).pdf at master · Sorosliu1029/CSAPP-Labs (github.com)](https://github.com/Sorosliu1029/CSAPP-Labs/blob/master/Computer%20Systems%20A%20Programmers%20Perspective%20(3rd).pdf)
 
 [ebook - The C Programming Language Ritchie & kernighan -.doc (archive.org)](https://ia802802.us.archive.org/15/items/The_C_Programming_Language/The_C_Programming_Language.pdf)
 
 Pre-requisite:
 
-<mark> The best course I have ever seen to bootstrap C: </mark> [CSE 251 Programming in C (msu.edu)](https://www.cse.msu.edu/~cse251/)
+C bootcamp:
+[CSE 251 Programming in C (msu.edu)](https://www.cse.msu.edu/~cse251/)
 
-To run docker:
 
-https://hub.docker.com/repository/docker/luchaoqi/cmu-15213
-
-docker-compose.yml
-```
-version: "3"
-
-services:
-  cmu: # name of the service
-    build: .
-    image: luchaoqi/cmu-15213
-    container_name: cmu-15213
-    volumes:
-      - .:/cmu
-    restart: "no"
-    stdin_open: true  # --interactive Keep STDIN open even if not attached (docker exec -i)
-    tty: true         # --tty Allocate a pseudo-TTY (docker exec -t)
-    security_opt:
-      - seccomp:unconfined
-    cap_add:
-      - SYS_PTRACE
-```
+To run with docker (zsh included): https://hub.docker.com/repository/docker/luchaoqi/cmu-15213
 
 ```
-docker-compose run --rm cmu
+docker run --rm -it -v "$PWD":/cmu luchaoqi/cmu-15213 zsh
 ```
+<del>docker-compose run --rm cmu<del>
