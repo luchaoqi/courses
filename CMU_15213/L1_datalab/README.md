@@ -1,4 +1,6 @@
-resources: https://graphics.stanford.edu/~seander/bithacks.html
+resources:
+https://graphics.stanford.edu/~seander/bithacks.html
+https://eclipse.umbc.edu/robucci/cmpeRSD/Lectures/Lecture16__Signed_Integers_and_Arithmetic/
 
 ```c
 /*
