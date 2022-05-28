@@ -94,22 +94,22 @@ repos:
 #                                   R-related                                  #
 # ---------------------------------------------------------------------------- #
 
-# require R installed?
--   repo: https://github.com/lorenzwalthert/precommit
-    rev: v0.2.2.9013
-    hooks:
-    -   id: style-files
-        language: r
-    -   id: parsable-R
-        language: r
-    -   id: no-browser-statement
-        language: r
-    -   id: readme-rmd-rendered
-        language: r
-    -   id: roxygenize
-        language: r
-    -   id: use-tidy-description
-        language: r
-    -   id: lintr
-        args: [--warn_only]
-        language: r
+# # require R installed?
+# -   repo: https://github.com/lorenzwalthert/precommit
+#     rev: v0.2.2.9013
+#     hooks:
+#     -   id: style-files
+#         language: r
+#     -   id: parsable-R
+#         language: r
+#     -   id: no-browser-statement
+#         language: r
+#     -   id: readme-rmd-rendered
+#         language: r
+#     -   id: roxygenize
+#         language: r
+#     -   id: use-tidy-description
+#         language: r
+#     -   id: lintr
+#         args: [--warn_only]
+#         language: r

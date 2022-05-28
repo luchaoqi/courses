@@ -105,12 +105,15 @@ if ! make paper.pdf ; then
 fi
 ```
 
-## Github workflows - No Jekyll
+## Github workflows - GitHub Pages
 
-For the sake of life, no Jekyll which is not newbie friendly.
-
-Use other alternatives like MkDocs, docsify, etc.
+Compare Jekyll, MkDocs, and docsify that are known to be good for rendering static websites.
 
 Mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638), which can be solved through: [courses/update_navigation_order.sh at main · luchaoqi/courses (github.com)](https://github.com/luchaoqi/courses/blob/main/update_navigation_order.sh)
 
+**It automatically generates the navigation bar, which saves a lot of time compared to manually generating/maintaining it.**
+
+Jekyll provides the most beautiful UI/themes from what I can tell - but it's navigation system needs to be manually maintained. To get something in quickly: https://github.com/stanford-cs329s/reports
+
 Docsify is installed through `npm` which is not installed in the server that I am currently using - don't want to install it on a industry server without `sudo`
+Also, it need to specify navigation system manually like `jekyll` does.
