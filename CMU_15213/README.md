@@ -1,16 +1,17 @@
-CMU 213 Introduction to Computer Systems
-
 [15-213/14-513/15-513: Introduction to Computer Systems (cmu.edu)](https://www.cs.cmu.edu/~213/index.html)
 
-Labs:
+## Labs
 
 [CS:APP3e, Bryant and O'Hallaron (cmu.edu)](http://csapp.cs.cmu.edu/3e/labs.html)
 
-Videos:
+[15-213/15-513 Intro to Computer Systems: Resources](https://www.cs.cmu.edu/~213/resources.html)
+> pick an available term and select `Schedule` on left
+
+## Videos
 
 [2015 Fall: 15-213 Introduction to Computer Systems : Panopto](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="b96d90ae-9871-4fae-91e2-b1627b43e25e"&sortColumn=0&sortAscending=true&maxResults=50)
 
-Text books:
+## Text books
 
 <mark> Reading the text book three times makes everything easy </mark>
 
@@ -18,7 +19,7 @@ Text books:
 
 [ebook - The C Programming Language Ritchie & kernighan -.doc (archive.org)](https://ia802802.us.archive.org/15/items/The_C_Programming_Language/The_C_Programming_Language.pdf)
 
-Pre-requisite:
+## Pre-requisite
 
 C bootcamp:
 [CSE 251 Programming in C (msu.edu)](https://www.cse.msu.edu/~cse251/)
@@ -27,6 +28,6 @@ C bootcamp:
 To run with docker (zsh included): https://hub.docker.com/repository/docker/luchaoqi/cmu-15213
 
 ```
-docker run --rm -it -v "$PWD":/cmu luchaoqi/cmu-15213 zsh
+docker run --rm -it -v "$PWD":/cmu luchaoqi/cmu-15213 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined zsh
 ```
 <del>docker-compose run --rm cmu<del>
