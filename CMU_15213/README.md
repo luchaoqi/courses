@@ -28,6 +28,9 @@ C bootcamp:
 To run with docker (zsh included): https://hub.docker.com/repository/docker/luchaoqi/cmu-15213
 
 ```
-docker run --rm -it -v "$PWD":/cmu luchaoqi/cmu-15213 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined zsh
+docker-compose run --rm cmu
 ```
-<del>docker-compose run --rm cmu<del>
+
+<del>docker run --rm -it -v "$PWD":/cmu luchaoqi/cmu-15213 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined zsh<del>
+
+[Interactive shell using Docker Compose - Stack Overflow](https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose) <del>docker-compose up<del>
