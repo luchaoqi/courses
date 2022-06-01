@@ -109,9 +109,9 @@ fi
 
 Compare Jekyll, MkDocs, and docsify that are known to be good for rendering static websites.
 
-Mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638), which can be solved through: [courses/update_navigation_order.sh at main · luchaoqi/courses (github.com)](https://github.com/luchaoqi/courses/blob/main/update_navigation_order.sh)
+Mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638) that can be solved through: [courses/update_navigation_order.sh](https://github.com/luchaoqi/courses/blob/1bd2d8c0990b9bd21d5d10ac144554ad5750c976/update_navigation_order.sh)
 
-**It automatically generates the navigation bar, which saves a lot of time compared to manually generating/maintaining it.**
+**Anyways, it saves a lot of time compared to manually generating or writing specific scripts in order to maintain the navigation bar.**
 
 Jekyll provides the most beautiful UI/themes from what I can tell - but it's navigation system needs to be manually maintained. To get something in quickly: https://github.com/stanford-cs329s/reports
 
