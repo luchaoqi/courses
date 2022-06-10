@@ -48,7 +48,7 @@ TLDR:
 
 [A Simple Makefile Tutorial (colby.edu)](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
-`<mark>`Note that order of entries in Makefile matters - it begins the first rule by default, then the rest is dependencies oriented. That said, if some latter targets are not dependencies of previous rules, they might not be executed `</mark>`
+<mark>Note that order of entries in Makefile matters - it begins the first rule by default, then the rest is dependencies oriented. That said, if some latter targets are not dependencies of previous rules, they might not be executed </mark>
 
 Some mistake I made: [`<mark>`c - How do I make Makefile to recompile only changed files? - Stack Overflow `</mark>`](https://stackoverflow.com/questions/7815400/how-do-i-make-makefile-to-recompile-only-changed-files)
 
