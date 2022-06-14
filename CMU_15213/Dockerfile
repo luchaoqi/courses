@@ -18,11 +18,7 @@ RUN apt-get update -y && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # https://apt.llvm.org/
-# RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
-RUN wget https://apt.llvm.org/llvm.sh
-RUN chmod +x llvm.sh && ./llvm.sh all
-# RUN chmod +x llvm.sh
-# RUN ./llvm.sh all
+RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 
 RUN apt-get install clang clang-format -y
 

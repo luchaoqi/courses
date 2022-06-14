@@ -11,13 +11,13 @@
 
 [2015 Fall: 15-213 Introduction to Computer Systems : Panopto](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID="b96d90ae-9871-4fae-91e2-b1627b43e25e"&sortColumn=0&sortAscending=true&maxResults=50)
 
-## Text books
+## Text books / Resources
 
 <mark> Reading the text book three times makes everything easy </mark>
 
 [CSAPP-Labs/Computer Systems A Programmers Perspective (3rd).pdf at master · Sorosliu1029/CSAPP-Labs (github.com)](https://github.com/Sorosliu1029/CSAPP-Labs/blob/master/Computer%20Systems%20A%20Programmers%20Perspective%20(3rd).pdf)
 
-[ebook - The C Programming Language Ritchie & kernighan -.doc (archive.org)](https://ia802802.us.archive.org/15/items/The_C_Programming_Language/The_C_Programming_Language.pdf)
+[Computer Systems: A Programmer's Perspective, 3/E (CS:APP3e)](https://csapp.cs.cmu.edu/3e/students.html)
 
 ## Pre-requisite
 
