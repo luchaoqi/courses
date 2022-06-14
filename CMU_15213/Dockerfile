@@ -23,6 +23,7 @@ RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 RUN apt-get install clang clang-format -y
 
 # install zsh and oh-my-zsh
+
 RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.2/zsh-in-docker.sh)" -- \
 -t 'jtriley' \
 -p git \
