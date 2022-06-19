@@ -109,11 +109,17 @@ fi
 
 Compare Jekyll, MkDocs, and docsify that are known to be good for rendering static websites.
 
-Mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638) that can be solved through: [courses/update_navigation_order.sh](https://github.com/luchaoqi/courses/blob/1bd2d8c0990b9bd21d5d10ac144554ad5750c976/update_navigation_order.sh)
+Mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638) that can be solved through:
+[lukasgeiter/mkdocs-awesome-pages-plugin: An MkDocs plugin that simplifies configuring page titles and their order](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
+[courses/update_navigation_order.sh](https://github.com/luchaoqi/courses/blob/1bd2d8c0990b9bd21d5d10ac144554ad5750c976/update_navigation_order.sh)
 
 **Anyways, it saves a lot of time compared to manually generating or writing specific scripts in order to maintain the navigation bar.**
 
-Jekyll provides the most beautiful UI/themes from what I can tell - but it's navigation system needs to be manually maintained. To get something in quickly: https://github.com/stanford-cs329s/reports
+Jekyll provides the most beautiful UI/themes from what I can tell - but its navigation bar needs to be manually maintained/hard-coded. To get something in quickly:
+[stanford-cs329s/reports: Final reports for CS 329S Winter 2021](https://github.com/stanford-cs329s/reports)
+[rnnh/bioinfo-notebook: 🔬 Bioinformatics Notebook. Scripts for bioinformatics pipelines, with quick start guides for programs and video demonstrations.](https://github.com/rnnh/bioinfo-notebook)
+[Navigation Structure | Just the Docs](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/)
 
 Docsify is installed through `npm` which is not installed in the server that I am currently using - don't want to install it on a industry server without `sudo`
-Also, it need to specify navigation system manually like `jekyll` does.
+Also, it need to hard-code navigation bar like `jekyll` does:
+[docsify/_sidebar.md at master · docsifyjs/docsify](https://github.com/docsifyjs/docsify/blob/master/docs/_sidebar.md)
