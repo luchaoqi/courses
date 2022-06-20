@@ -18,6 +18,7 @@ docker-compose run --rm cmu
 
 <del>docker run --rm -it -v "$PWD":/cmu luchaoqi/cmu-15213 --cap-add=SYS_PTRACE --security-opt seccomp=unconfined zsh<del>
 
+[Computer Systems: A Programmer's Perspective, 3/E (CS:APP3e)](https://csapp.cs.cmu.edu/3e/students.html)
 [Interactive shell using Docker Compose - Stack Overflow](https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose) <del>docker-compose up<del>
 
 > You can set stdin_open: true, tty: true, however that won't actually give you a proper shell with up, because logs are being streamed from all the containers.
