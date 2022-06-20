@@ -10,7 +10,7 @@
 
 ## Lab environment
 
-To run with docker (zsh included): https://hub.docker.com/repository/docker/luchaoqi/cmu-15213
+To run with docker (zsh, radare2, etc. installed) : https://hub.docker.com/repository/docker/luchaoqi/cmu-15213
 
 ```
 docker-compose run --rm cmu
@@ -21,7 +21,7 @@ docker-compose run --rm cmu
 [Interactive shell using Docker Compose - Stack Overflow](https://stackoverflow.com/questions/36249744/interactive-shell-using-docker-compose) <del>docker-compose up<del>
 
 > You can set stdin_open: true, tty: true, however that won't actually give you a proper shell with up, because logs are being streamed from all the containers.
-  
+
 ## Resources
 
 C bootcamp:
@@ -30,6 +30,8 @@ C bootcamp:
 Checkout the `Handouts` session on the top; it gives lots of concise information:
 [CS107 Computer Organization & Systems (stanford.edu)](https://user-images.githubusercontent.com/46330265/172753677-b4bac483-43b1-4aab-832e-22039cb072f1.png)
 
+Radare2 for reverse engineering:
+[radareorg/radare2: UNIX-like reverse engineering framework and command-line toolset](https://github.com/radareorg/radare2)
 
 ## Videos
 

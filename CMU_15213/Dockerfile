@@ -3,8 +3,6 @@ FROM ubuntu:20.04
 ENV TZ=America/New_York
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-WORKDIR /cmu
-
 RUN apt-get update -y && apt-get install -y \
     python3-venv python3-pip \
     build-essential \
@@ -15,6 +13,7 @@ RUN apt-get update -y && apt-get install -y \
     python \
     vim \
     lsb-release wget software-properties-common \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
 # https://apt.llvm.org/
@@ -31,3 +30,9 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 -p https://github.com/zsh-users/zsh-autosuggestions \
 -p https://github.com/zsh-users/zsh-syntax-highlighting \
 -p https://github.com/zsh-users/zsh-history-substring-search
+
+# install radare2
+RUN git clone https://github.com/radareorg/radare2
+RUN bash -c radare2/sys/install.sh
+
+WORKDIR /cmu
