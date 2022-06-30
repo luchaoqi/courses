@@ -19,6 +19,34 @@ Q & A:
 * [bit manipulation - The difference between logical shift right, arithmetic shift right, and rotate right - Stack Overflow](https://stackoverflow.com/questions/44694957/the-difference-between-logical-shift-right-arithmetic-shift-right-and-rotate-r#:~:text=Logical%20right%20shift%20means%20shifting,as%20in%20the%20original%20number)
 
 
+
+### Takeaways
+
+GDB
+```shell
+gdb <program>
+r
+info bre
+info reg
+ni # stay in the main
+si # step into the function
+break <function/address>
+x/<x/s/d> # shows you the contents of a memory address
+p/<format> # shows you the value stored in a named variable
+list
+cont
+```
+
+[Introduction - The Official Radare2 Book](https://book.rada.re/index.html)
+```shell
+r2 <program>
+aaa
+pdf @ main~phase
+s sym.phase_5
+pdf
+v # into visual mode
+c # toggle the cursor on/off
+```
 ### Phase 1
 
 Similar to activity 3 in [recitation03-bomblab](https://www.cs.cmu.edu/afs/cs/academic/class/15213-s19/www/recitations/recitation03-bomblab.pdf)
@@ -48,7 +76,7 @@ After disassembling, we can see that for `callq strings_not_equal`, it is using 
 
 ### Phase 2
 
-It starts from <phase_2+18> and loops between <phase_2+27> and <phase_2+52>. The key is `<+14>:    cmpl   $0x1,(%rsp)` and `<+30>:    add    %eax,%eax`.
+It starts from `<phase_2+18>` and loops between `<phase_2+27>` and `<phase_2+52>`. The key is `<+14>:    cmpl   $0x1,(%rsp)` and `<+30>:    add    %eax,%eax`.
 
 ### Phase 3
 
@@ -115,9 +143,9 @@ second number should be `0`, here I tested with `10 123`.
    0x000000000040102e <+34>:    cmpl   $0xe,0x8(%rsp)
    0x0000000000401033 <+39>:    jbe    0x40103a <phase_4+46>
 (gdb) x/d $rsp+0x8
-0x7fffffffe548: 14
+0x7fffffffe548: 10
 ```
-first number should be less than or equal to `0xe=14`
+the first number should be less than or equal to `0xe=14`
 
 ```
    0x0000000000401048 <+60>:    callq  0x400fce <func4>
@@ -127,6 +155,7 @@ first number should be less than or equal to `0xe=14`
    0x0000000000401056 <+74>:    je     0x40105d <phase_4+81>
    0x0000000000401058 <+76>:    callq  0x40143a <explode_bomb>
 ```
+the second number should be `0`
 func4 is called and the result is compared to 0x0, if it is not 0x0, it will call `explode_bomb`. Then we disassemble func4
 
 ```
@@ -142,4 +171,32 @@ to let func4 return 0x0, the code at <+36>, we can find that the input x must be
 
 [CMU Bomb Lab with Radare2 — Phase 5 | by Mark Higgins | Medium](https://mybagoftricks.medium.com/cmu-bomb-lab-with-radare2-phase-5-939497fc896c)
 
-I recommend using [Radare2](https://radare.org/) from now on.
+I recommend using [Radare2](https://radare.org/), although it has a steep learning curve -
+[Migration from ida, GDB or WinDBG - The Official Radare2 Book](https://book.rada.re/debugger/migration.html)
+
+### Phase 6
+
+Really tricky that idk if it's worth the effort to defuse it.
+
+```
+<+93> all numbers should be unique
+<+121> for each number x, we replace it with 7-x
+<+183> copy values into a new stack based on input (six numbers)
+<+257> values in the stack (linked list) should be sorted
+```
+
+The key is to understand the linked list structure:
+
+```shell
+   0x0000000000401183 <+143>:   mov    $0x6032d0,%edx
+(gdb) x/24wd 0x6032d0
+0x6032d0 <node1>:       332     1       6304480 0
+0x6032e0 <node2>:       168     2       6304496 0
+0x6032f0 <node3>:       924     3       6304512 0
+0x603300 <node4>:       691     4       6304528 0
+0x603310 <node5>:       477     5       6304544 0
+0x603320 <node6>:       443     6       0       0
+```
+
+Then all we need to do is to sort the values in the nodes, in this case, `332 168 924 691 477 443` to `924 691 477 443 332 168`.
+So, the node order is `3 4 5 6 1 2` and we replace each number x with 7-x: `4 3 2 1 6 5`.

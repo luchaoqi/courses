@@ -189,7 +189,7 @@ long isLessOrEqual(long x, long y) {
      two cases to return 1:
         1. different sign: x is negative and y is positive
         2. same sign and difference is larger or equal than 0
-        -x == (~x) + 1 only works when x is not TMIN
+        !! -x == (~x) + 1 only works when x is not TMIN
         but MSB doesn't change even when x is TMIN
         y + (~x) + 1 >= 0 should be used carefully because it may overflow
      * when x is TMIN and y is negative, y>=x is always TRUE.
