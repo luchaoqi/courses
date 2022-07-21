@@ -136,7 +136,7 @@ Also, it need to hard-code navigation bar like `jekyll` using [docsify/_sidebar.
 
 It needs to hard-code navigation bar using `index.rst`: [marcelm/cutadapt: Cutadapt removes adapter sequences from sequencing reads](https://github.com/marcelm/cutadapt)
 
-The main advantage is that it provides version controls - really easy to check old versions of the docs.
+Like [Sphinx Tutorial — Sphinx Tutorial 1.0 documentation](https://sphinx-tutorial.readthedocs.io/#), the main advantage is that it provides version controls - really easy to check old versions of the docs.
 
 
 Overall, I personally prefer to [just-the-docs/just-the-docs: A modern, high customizable, responsive Jekyll theme for documention with built-in search.](https://github.com/just-the-docs/just-the-docs), but I am not sure if it is the best choice.
