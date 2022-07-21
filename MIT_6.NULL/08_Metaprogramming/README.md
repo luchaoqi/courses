@@ -107,19 +107,36 @@ fi
 
 ## Github workflows - GitHub Pages
 
-Compare Jekyll, MkDocs, and docsify that are known to be good for rendering static websites.
+Compare common stacks that are known to be good for rendering static websites.
+
+### Mkdocs
 
 Mkdocs has some issues: [Navigation not in alphanumeric order (when pages config is automatic) · Issue #638 · mkdocs/mkdocs (github.com)](https://github.com/mkdocs/mkdocs/issues/638) that can be solved through:
+
 [lukasgeiter/mkdocs-awesome-pages-plugin: An MkDocs plugin that simplifies configuring page titles and their order](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
+
 [courses/update_navigation_order.sh](https://github.com/luchaoqi/courses/blob/1bd2d8c0990b9bd21d5d10ac144554ad5750c976/update_navigation_order.sh)
 
-**Anyways, it saves a lot of time compared to manually generating or writing specific scripts in order to maintain the navigation bar.**
+**Anyways, it orders pages based on lexicographical order by default. This saves a lot of time compared to manually generating or writing specific indexing file in order to maintain the navigation bar.**
+
+### Jekyll
 
 Jekyll provides the most beautiful UI/themes from what I can tell - but its navigation bar needs to be manually maintained/hard-coded. To get something in quickly:
 [stanford-cs329s/reports: Final reports for CS 329S Winter 2021](https://github.com/stanford-cs329s/reports)
+
+Based on Jekyll, I love `Just the Docs`, which also requires hard-coding the navigation bar, but it's a lot ?convenient using in-page `YAML front matter` [Navigation Structure | Just the Docs](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/)
+
 [rnnh/bioinfo-notebook: 🔬 Bioinformatics Notebook. Scripts for bioinformatics pipelines, with quick start guides for programs and video demonstrations.](https://github.com/rnnh/bioinfo-notebook)
-[Navigation Structure | Just the Docs](https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/)
+
+### Docsify
 
 Docsify is installed through `npm` which is not installed in the server that I am currently using - don't want to install it on a industry server without `sudo`
-Also, it need to hard-code navigation bar like `jekyll` does:
-[docsify/_sidebar.md at master · docsifyjs/docsify](https://github.com/docsifyjs/docsify/blob/master/docs/_sidebar.md)
+Also, it need to hard-code navigation bar like `jekyll` using [docsify/_sidebar.md at master · docsifyjs/docsify](https://github.com/docsifyjs/docsify/blob/master/docs/_sidebar.md)
+### [Read the Docs](https://readthedocs.org/)
+
+It needs to hard-code navigation bar using `index.rst`: [marcelm/cutadapt: Cutadapt removes adapter sequences from sequencing reads](https://github.com/marcelm/cutadapt)
+
+The main advantage is that it provides version controls - really easy to check old versions of the docs.
+
+
+Overall, I personally prefer to [just-the-docs/just-the-docs: A modern, high customizable, responsive Jekyll theme for documention with built-in search.](https://github.com/just-the-docs/just-the-docs), but I am not sure if it is the best choice.

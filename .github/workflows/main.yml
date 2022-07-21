@@ -32,8 +32,9 @@ jobs:
           pip install -r requirements.txt
 
       # # update navigation order in mkdocs
+      # # no longer needed after changing naming format of md files
       # - name: Update navigation order
-      #   run: . .github/workflows/update_navigation_order.py
+      #   run: . .github/workflows/scripts/update_navigation_order.py
 
       - name: Deploy MkDocs
         uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
