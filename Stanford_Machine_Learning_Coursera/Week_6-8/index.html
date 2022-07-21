@@ -1,0 +1,1202 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Week 6 8 - Courses</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#metrics-in-machine-learning-system-design" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Courses" class="md-header__button md-logo" aria-label="Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Courses
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Week 6 8
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/luchaoqi/courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Courses" class="md-nav__button md-logo" aria-label="Courses" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Courses
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/luchaoqi/courses" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../CMU_15213/">CMU 15213</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="CMU 15213" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          CMU 15213
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CMU_15213/L0_cprogramminglab/" class="md-nav__link">
+        L0 cprogramminglab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CMU_15213/L1_datalab/" class="md-nav__link">
+        L1 datalab
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CMU_15213/L2_bomblab/" class="md-nav__link">
+        L2 bomblab
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../MIT_6.NULL/">MIT 6.NULL</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="MIT 6.NULL" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          MIT 6.NULL
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/01_Course_overview_%2B_the_shell/" class="md-nav__link">
+        01 Course overview + the shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/02_Shell_Tools_and_Scripting/" class="md-nav__link">
+        02 Shell Tools and Scripting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/04_Data_Wrangling/" class="md-nav__link">
+        04 Data Wrangling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/05_Command-line_Environment/" class="md-nav__link">
+        05 Command line Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/06_Version_Control_%28Git%29/" class="md-nav__link">
+        06 Version Control (Git)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/07_Debugging_and_Profiling/" class="md-nav__link">
+        07 Debugging and Profiling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/08_Metaprogramming/" class="md-nav__link">
+        08 Metaprogramming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/09_Security_and_Cryptography/" class="md-nav__link">
+        09 Security and Cryptography
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MIT_6.NULL/10_Potpourri/" class="md-nav__link">
+        10 Potpourri
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Stanford Machine Learning Coursera</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Stanford Machine Learning Coursera" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Stanford Machine Learning Coursera
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week_1-5/" class="md-nav__link">
+        Week 1 5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Week 6 8
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Week 6 8
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metrics-in-machine-learning-system-design" class="md-nav__link">
+    Metrics in Machine Learning System Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#svm" class="md-nav__link">
+    SVM
+  </a>
+  
+    <nav class="md-nav" aria-label="SVM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomial-kernel" class="md-nav__link">
+    Polynomial Kernel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radial-kernel" class="md-nav__link">
+    Radial Kernel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k-means" class="md-nav__link">
+    K-Means
+  </a>
+  
+    <nav class="md-nav" aria-label="K-Means">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elbow-method" class="md-nav__link">
+    Elbow Method
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca" class="md-nav__link">
+    PCA
+  </a>
+  
+    <nav class="md-nav" aria-label="PCA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eigen-decomposition-of-covariance-matrix" class="md-nav__link">
+    eigen-decomposition of covariance matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#svd" class="md-nav__link">
+    SVD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-art-of-using-t-sne-for-single-cell-transcriptomics-nature-communications" class="md-nav__link">
+    The art of using t-SNE for single-cell transcriptomics | Nature Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-abuse-pca" class="md-nav__link">
+    Don't abuse PCA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week_9-11/" class="md-nav__link">
+        Week 9 11
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#metrics-in-machine-learning-system-design" class="md-nav__link">
+    Metrics in Machine Learning System Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#svm" class="md-nav__link">
+    SVM
+  </a>
+  
+    <nav class="md-nav" aria-label="SVM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomial-kernel" class="md-nav__link">
+    Polynomial Kernel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radial-kernel" class="md-nav__link">
+    Radial Kernel
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k-means" class="md-nav__link">
+    K-Means
+  </a>
+  
+    <nav class="md-nav" aria-label="K-Means">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elbow-method" class="md-nav__link">
+    Elbow Method
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca" class="md-nav__link">
+    PCA
+  </a>
+  
+    <nav class="md-nav" aria-label="PCA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eigen-decomposition-of-covariance-matrix" class="md-nav__link">
+    eigen-decomposition of covariance matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#svd" class="md-nav__link">
+    SVD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-art-of-using-t-sne-for-single-cell-transcriptomics-nature-communications" class="md-nav__link">
+    The art of using t-SNE for single-cell transcriptomics | Nature Communications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dont-abuse-pca" class="md-nav__link">
+    Don't abuse PCA
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Week 6 8</h1>
+
+<h2 id="metrics-in-machine-learning-system-design">Metrics in Machine Learning System Design</h2>
+<p>Bias and variance: <a href="https://www.coursera.org/learn/machine-learning/supplement/81vp0/diagnosing-bias-vs-variance">Diagnosing Bias vs. Variance | Coursera</a></p>
+<p><span class="arithmatex">\(J_{CV}\)</span> denotes cross validation error which is the same as validation error <span class="arithmatex">\(J_V\)</span></p>
+<p><img alt="" src="https://i.ibb.co/fVJFrQ2/image.png" /></p>
+<p><img alt="" src="https://i.ibb.co/c3bg9n9/image.png" /></p>
+<p>Precision vs. Recall</p>
+<p>Note that, in convention, <span class="arithmatex">\(y=1\)</span> usually presents <strong>rare</strong> class OR class we are <strong>more</strong> interested in e.g. patients with cancer we want to detect</p>
+<p><img alt="" src="https://i.ibb.co/YyWYH3M/image.png" /></p>
+<p>PR curve</p>
+<p>Note the PR curve gives precision and recall at all thresholds - high threshold gives high precision but low recall, low threshold gives low precision but high recall (this is what we want in the cancer example)</p>
+<p><img alt="" src="https://i.ibb.co/bb7NnbZ/image.png" /></p>
+<p>How to choose a good threshold?</p>
+<p>A: use F-score, <span class="arithmatex">\(F_1 Score = 2\frac{PR}{P+R}\)</span>, in mathematics, this is called the harmonic mean of precision and sensitivity.</p>
+<h2 id="svm">SVM</h2>
+<p>The intuition of designing loss function for logistic regression should gives some clue how we design it in SVM:</p>
+<p><img alt="" src="https://i.ibb.co/SQnHKLR/image.png" /></p>
+<p><img alt="" src="https://i.ibb.co/CbVKd3Z/image.png" /></p>
+<p><img alt="" src="https://i.ibb.co/zRwbRjv/image.png" /></p>
+<p>I think I mentioned it previously:</p>
+<blockquote>
+<p>The whole cost function consists of original cost function and an additional regularization term.</p>
+<p>So the larger <span class="arithmatex">\(\lambda\)</span> means the higher weight it has in the final cost function, meaning the regularization has higher amount of impact. Thus, in extreme case with very large regularization, the function can be underfitted.</p>
+<p>Likewise, the larger <span class="arithmatex">\(C = 1/\lambda\)</span> which is the parameter for original cost function (non regularization part) means less impact of the regularization. Thus, in extreme case with no regularization, the function is trying to do perfect job even it comes with overfitting.</p>
+</blockquote>
+<p><a href="https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel">machine learning - What is the influence of C in SVMs with linear kernel? - Cross Validated (stackexchange.com)</a></p>
+<p>So here, Andrew is trying to illustrate the case that SVM is trying to separate two classes without any errors:</p>
+<p><img alt="" src="https://i.ibb.co/BGYyF3g/image.png" /></p>
+<p><a href="https://www.youtube.com/watch?v=5yzSv4jYMyI&amp;list=PLgIPpm6tJZoShjm7r8Npia7CMsMlRWeuZ&amp;index=1">Udacity</a> provides another understanding of the optimization problem.</p>
+<p>For two vectors <span class="arithmatex">\(x_{1},x_{2}\)</span> that are on two support vectors we have:</p>
+<div class="arithmatex">\[
+\begin{array}{l}{\omega^{\top} x_{1}+b=1} \\ {\omega^{\top} x_{2}+b=-1}\end{array}
+\]</div>
+<p>If you subtract them, the distance between planes (i.e. margin) can be presented as</p>
+<div class="arithmatex">\[
+\frac{\omega^{T}\left(x_{1}-x_{2}\right)}{\|\omega\|}=\frac{2}{\|\omega\|}
+\]</div>
+<p>s.t. for two classifications/labels <span class="arithmatex">\(y_i = 1/-1\)</span>, <span class="arithmatex">\(y_i*(w^Tx_i+b) \geq 1\)</span></p>
+<p><strong>Why? Because <span class="arithmatex">\(w^T\)</span> is the direction vertical to the hyperplane so the left part means exactly the projected distance of the vector <span class="arithmatex">\(x_{1} - x_{2}\)</span>  on unit vector <span class="arithmatex">\(w^T / \|w^T\|\)</span></strong></p>
+<p><img alt="" src="https://www.researchgate.net/publication/304611323/figure/fig8/AS:668377215406089@1536364954428/Classification-of-data-by-support-vector-machine-SVM.png" /></p>
+<blockquote>
+<p>Why <span class="arithmatex">\(w^T\)</span> is vertical to the hyperplane?</p>
+<p>Imagine two points on the hyperplane <span class="arithmatex">\(w^Tx+b =0\)</span></p>
+<p><span class="arithmatex">\(w^Tx_1+b = w^Tx_2+b = 0\)</span></p>
+<p><span class="arithmatex">\(w^T(x_1-x_2)=0\)</span></p>
+<p><span class="arithmatex">\(x_{1} - x_{2}\)</span> is the vector on the hyperplane and thus <span class="arithmatex">\(w ^T\)</span> is the normal vector. bam!!!</p>
+</blockquote>
+<p>Maximizing the margin equals to minimizing the reciprocal along with monotone</p>
+<div class="arithmatex">\[
+\begin{array}{l}{\max \frac{2}{\| w \|}} \\ {\min 1 / 2\|w\|^{2}}\end{array}
+\]</div>
+<h3 id="polynomial-kernel">Polynomial Kernel</h3>
+<p>I personally prefer explanations from Josh here: <a href="https://statquest.org/video-index/">Video Index - StatQuest!!!</a> (there are three videos)</p>
+<p><a href="https://www.youtube.com/watch?v=Toet3EiSFcM">Support Vector Machines Part 2: The Polynomial Kernel (Part 2 of 3) - YouTube</a></p>
+<p>Polynomial kernel formula:</p>
+<div class="arithmatex">\[
+(a * b + r)^d \\
+a.b: \text{a and b refer to two different data in the dataset (1 dimension)} \\
+r: \text{r determines the coefficient of polynomial} \\
+d: \text{d determines the degree of polynomial}
+\]</div>
+<p>Note <span class="arithmatex">\(r\)</span> and <span class="arithmatex">\(d\)</span> are determined through cross validation, here we set <span class="arithmatex">\(r = 1\)</span> and <span class="arithmatex">\(d = 2\)</span> for illustration</p>
+<div class="arithmatex">\[
+(a*b+1)^2 = (\sqrt{2}a,a^2,1)\cdot(\sqrt{2}b,b^2,1)
+\]</div>
+<p><strong>It means we create two new features (constant 1 is the same so we ignore it): <span class="arithmatex">\(\sqrt{2}*x, x^2\)</span> to help differentiate original <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> where there is only one feature <span class="arithmatex">\(x\)</span></strong></p>
+<p><strong>In practice, we can directly plug values into the kernel where the output represents the relationship between two data in 2-dimensions without actually transform the data to 2-Dimensions.</strong></p>
+<h3 id="radial-kernel">Radial Kernel</h3>
+<p><a href="https://www.youtube.com/watch?v=Qc5IyLW_hns">Support Vector Machines Part 3: The Radial (RBF) Kernel (Part 3 of 3) - YouTube</a></p>
+<p>RBF formula:</p>
+<div class="arithmatex">\[
+e^{-\gamma(a - b)^2} \\
+\gamma: \text{determines the scale of influence two points have on each other}
+\]</div>
+<p>Go through the video and you will find <code>&lt;mark&gt;</code> how RBF kernel defines the relationship between two points in infinite-dimensions is genius!<code>&lt;/mark&gt;</code></p>
+<p>Let's set <span class="arithmatex">\(\gamma=1/2\)</span> for illustration:</p>
+<p><span class="arithmatex">\(e^{-1/2(a - b)^2} = e^{-1/2(a^2+b^2)} e^{ab}\)</span></p>
+<p>With Taylor Series Expansion: <span class="arithmatex">\(e^x = f(a)+\frac {f'(a)}{1!} (x-a)+ \frac{f''(a)}{2!} (x-a)^2+\frac{f'''(a)}{3!}(x-a)^3+ \cdots\)</span></p>
+<p>We set <span class="arithmatex">\(a = 0\)</span> for series above and replace x with ab</p>
+<p><img alt="" src="https://i.ibb.co/6r86Jvh/image.png" />
+<img alt="" src="https://i.ibb.co/bjhpMDH/image.png" /></p>
+<p><strong>So, for original coordinates that has only one dimension <span class="arithmatex">\(x\)</span>, the new coordinates are of infinite number of dimensions.</strong></p>
+<p><strong>Note, like mentioned before, we are not actually projecting data into infinite number of dimensions and then try to figure out how to separate them in SVM. Instead, we plug the value into kernel function where the output (a single number) represents the relationship between two data points.</strong></p>
+<h2 id="k-means">K-Means</h2>
+<pre><code class="language-python">from statistics import mean
+
+def cal_dist(p1,p2):
+    return sum((a-b)**2 for a,b in zip(p1,p2))**0.5
+
+def kmeans(dataset,k,threshold=1e-10,n_iter=50):
+    &quot;&quot;&quot;
+    Args:
+        dataset : array
+        k : number of K
+        threshold : centroids merge threshold e.g. dist(prev_centroid,new_centroid) &lt;= thrshold == same_centroid
+        n_iter : maximum number of iterations
+    Returns:
+        location of final centroids
+    &quot;&quot;&quot;
+    dataset = [tuple(i) for i in dataset]
+    prev_centroids = {i: [] for i in dataset[:k]}
+    for n in range(1, n_iter + 1):
+        for data in dataset: # step1: assign datapoint to its closest centroid
+            closest_centroid = min(prev_centroids,key=lambda x:cal_dist(data,x))
+            prev_centroids[closest_centroid].append(data)
+
+        cur_centroids = []
+        for centroid, cluster in prev_centroids.items(): # calculate new centroid
+            mean_x,mean_y = mean(c[0] for c in cluster),mean(c[1] for c in cluster)
+            cur_centroids.append((mean_x,mean_y))
+
+        # return if all new centroids are close (dist &lt;= threshold) to old centroids
+        if all(cal_dist(p,q) &lt;= threshold for p,q in zip(prev_centroids.keys(),cur_centroids)):
+            print(f'Optimization finished with {n} iterations')
+            for k,v in prev_centroids.items():
+                print(k,':',v)
+            break
+
+        # update prev_centroids with cur_centroids
+        prev_centroids = {centroid:[] for centroid in cur_centroids}
+
+    return cur_centroids
+# A = [(random.randint(0,10),random.randint(0,10)) for _ in range(1000)]
+A = [[1,1],[2,1],[4,3],[5,4],[100,10],[20,20]]
+print(kmeans(A,2))
+
+</code></pre>
+<h3 id="elbow-method">Elbow Method</h3>
+<p>When trying to determine number of K in K-Means, we can use "elbow" method.</p>
+<p><img alt="" src="https://i.ibb.co/RHXhTsK/image.png" /></p>
+<p>Similarly in PCA, when trying to determine the number of principal component for further analysis, we can use this method in scree plot.</p>
+<p>From my previous manuscript:</p>
+<blockquote>
+<p>However, inferentially determining the number of PCs remains a difficult task and there is no single approach. To address this problem, 10-fold cross-validation was used. The first 50 PCs were used in cross-validation while always keeping other covariates. The overall root-mean-square error (RMSE) and R-squared would be our metrics when evaluating model performance. Note that the smallest RMSE or the largest R-squared doesn’t significantly indicate the best number of PCs to use in the model. Overfitting may occur and affect the predictive accuracy of the regression model with a new dataset. As such, a nested model search was performed using F-tests on groupings of variables. Thus, we compared nested models without any principal components of daily activity and models with different numbers of components.</p>
+</blockquote>
+<p><a href="https://www.graphpad.com/guides/prism/latest/curve-fitting/reg_howtheftestworks.htm">GraphPad Prism 9 Curve Fitting Guide - How the F test works to compare models</a></p>
+<h2 id="pca">PCA</h2>
+<p>The mathematics to inferentially understand why <code>calculating eigen decomposition of covariance matrix</code> == <code>getting the principal component that minimize the distance to PC/maximize the variance of projections</code> is included in my github repo.</p>
+<h3 id="eigen-decomposition-of-covariance-matrix">eigen-decomposition of covariance matrix</h3>
+<pre><code class="language-python">import numpy as np
+
+def pca(data):
+    # scale data based on mean of features
+    feature_mean = np.mean(data.T,axis=1)
+    data_std = data - feature_mean
+
+    covMatrix = np.cov(data_std.T)
+    eigenValues, eigenVectors = np.linalg.eig(covMatrix)
+    # eigenVectors: The normalized (unit “length”) eigenvectors, such that the column v[:,i] is the eigenvector corresponding to the eigenvalue w[i].
+    idx = eigenValues.argsort()[::-1]
+    eigenValues = eigenValues[idx]
+    eigenVectors = eigenVectors[:,idx]
+
+    projections = data_std @ eigenVectors # definitions of dot product of two vectors/matrices
+
+    print(eigenValues)
+    print(eigenVectors)
+    print(projections)
+    # projections[0] is the projection of data_std[0] in the new coordinates
+
+x = [-1,-1,0,2,0]
+y = [-2,0,0,1,1]
+data = np.array([[i,j] for i,j in zip(x,y)])
+pca(data)
+
+# [2.5 0.5]
+# [[ 0.70710678 -0.70710678]
+#  [ 0.70710678  0.70710678]]
+# [[-2.12132034 -0.70710678]
+#  [-0.70710678  0.70710678]
+#  [ 0.          0.        ]
+#  [ 2.12132034 -0.70710678]
+#  [ 0.70710678  0.70710678]]
+</code></pre>
+<h3 id="svd">SVD</h3>
+<p>The SVD decomposition is heavily linear algebra required, please read through some main concepts here:</p>
+<p><a href="https://en.wikipedia.org/wiki/Symmetric_matrix#Decomposition">Symmetric matrix - Wikipedia</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Eigendecomposition_of_a_matrix#Eigendecomposition_of_a_matrix">Eigendecomposition of a matrix - Wikipedia</a></p>
+<p><a href="https://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca">dimensionality reduction - Relationship between SVD and PCA. How to use SVD to perform PCA? - Cross Validated (stackexchange.com)</a></p>
+<p><a href="https://stats.stackexchange.com/questions/314046/why-does-andrew-ng-prefer-to-use-svd-and-not-eig-of-covariance-matrix-to-do-pca">linear algebra - Why does Andrew Ng prefer to use SVD and not EIG of covariance matrix to do PCA? - Cross Validated (stackexchange.com)</a></p>
+<blockquote>
+<p>The singular value decomposition of a matrix <span class="arithmatex">\(A\)</span> is <span class="arithmatex">\(A=U\Sigma V^T\)</span>, where the columns of <span class="arithmatex">\(V\)</span> are eigenvectors of <span class="arithmatex">\(A^TA\)</span> and the diagonal entries of <span class="arithmatex">\(\Sigma\)</span> are the <strong>square roots</strong> of its eigenvalues, i.e. <span class="arithmatex">\(\sigma_{ii}=\sqrt{\lambda_i(A^TA)}\)</span>.</p>
+<p>Multiplying a matrix by a scalar leaves the eigenvectors unchanged and multiplies every eigenvalue by the same scalar.</p>
+</blockquote>
+<p><span class="arithmatex">\(\mathbf{C} \text{(covariance matrix)}=\mathbf{X}^{\top} \mathbf{X} /(n-1)\)</span></p>
+<p>Wikipadia on symmetric matrix: Diagonalizable symmetric covariance matrix C can be decomposed as</p>
+<p><span class="arithmatex">\(\mathbf{C}=\mathbf{V} \mathbf{L} \mathbf{V}^{\top} (1)\)</span></p>
+<p>If we now perform singular value decomposition of X, we obtain a decomposition</p>
+<p><span class="arithmatex">\(\mathbf{X}=\mathbf{U S} \mathbf{V}^{\top}\)</span></p>
+<p><span class="arithmatex">\(\mathbf{C}=\mathbf{V S} \mathbf{U}^{\top} \mathbf{U S V}^{\top} /(n-1)=\mathbf{V} \frac{\mathbf{S}^{2}}{n-1} \mathbf{V}^{\top} (2)\)</span></p>
+<p>Compare <code>equation 1</code> vs. <code>equation 2</code>, they are the same. So there are 2 ways to get eigenvectors of covariance matrix</p>
+<ol>
+<li><code>equation 1</code> SVD of covariance matrix to get eigenvectors of covariance matrix <span class="arithmatex">\(C\)</span></li>
+<li><code>equation 2</code> SVD of raw matrix <span class="arithmatex">\(X\)</span> is the same as SVD of covariance matrix <span class="arithmatex">\(C\)</span> (<span class="arithmatex">\(L = S_{raw}^2/(n-1)\)</span>)</li>
+</ol>
+<pre><code class="language-python">def pca(data):
+    data = data.T
+    m,n = data.shape
+    data_trans = 1/np.sqrt(n-1) * data.T
+    u, s, vh = np.linalg.svd(data_trans)
+    print(s**2/np.sum(s**2)) # explained_variance_ratio_
+    print(vh)
+    print(data.T @ vh)
+
+pca(data)
+
+# [0.83333333 0.16666667]
+# [[ 0.70710678  0.70710678]
+#  [ 0.70710678 -0.70710678]]
+# [[-2.12132034  0.70710678]
+#  [-0.70710678 -0.70710678]
+#  [ 0.          0.        ]
+#  [ 2.12132034  0.70710678]
+#  [ 0.70710678 -0.70710678]]
+</code></pre>
+<h3 id="the-art-of-using-t-sne-for-single-cell-transcriptomics-nature-communications"><a href="https://www.nature.com/articles/s41467-019-13056-x">The art of using t-SNE for single-cell transcriptomics | Nature Communications</a></h3>
+<p><a href="https://jlmelville.github.io/smallvis/init.html">t-SNE Initialization Options (jlmelville.github.io)</a></p>
+<p><a href="https://www.nature.com/articles/s41587-020-00809-z">Initialization is critical for preserving global data structure in both t-SNE and UMAP | Nature Biotechnology</a></p>
+<p><a href="https://github.com/dkobak/tsne-umap-init">dkobak/tsne-umap-init: Initialization is critical for preserving global data structure in both t-SNE and UMAP (github.com)</a></p>
+<pre><code class="language-python"># What happens if we do standardization before PCA
+import numpy as np
+# preprocessing
+librarySizes = np.array(np.sum(batch003['counts'], axis=1))
+# librarySizes = np.sum(batch003['counts'], axis=1).reshape(-1, 1)
+X = np.log2(batch003['counts'][:, importantGenes_idx] / librarySizes * np.median(librarySizes) + 1)
+X = np.array(X)
+X = X - X.mean(axis=0)
+X = X / X.std(axis=0)
+# pca to speed up algorithm
+U,s,V = np.linalg.svd(X, full_matrices=False)
+U[:, np.sum(V,axis=1)&lt;0] *= -1
+X = np.dot(U, np.diag(s))
+X = X[:, np.argsort(s)[::-1]][:,:50]
+X = X / np.max(np.abs(X))
+# pca-based tsne
+PCAinit = X[:,:2] / np.std(X[:,0]) * .0001
+Z = fast_tsne(X, perplexity=30, initialization=PCAinit)
+</code></pre>
+<h3 id="dont-abuse-pca">Don't abuse PCA</h3>
+<p>The problem of PCA is that it only works well when the first 2 principal components account for most of the variation in the data</p>
+<p><a href="https://www.youtube.com/watch?v=eN0wFzBA4Sc">UMAP Dimension Reduction, Main Ideas!!! - YouTube</a></p>
+<p>It's a bad idea to use PCA to prevent overfitting - use PCA wisely</p>
+<p><img alt="" src="https://i.ibb.co/KXLXvMQ/image.png" /></p>
+<p>Don't abuse it and use it only when raw data (original features) doesn't work</p>
+<p><img alt="" src="https://i.ibb.co/s9mGjdq/image.png" /></p>
+<p>When to use PCA:</p>
+<p><img alt="" src="https://i.ibb.co/q9nt45S/image.png" /></p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Week_1-5/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Week 1 5" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Week 1 5
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Week_9-11/" class="md-footer__link md-footer__link--next" aria-label="Next: Week 9 11" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Week 9 11
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

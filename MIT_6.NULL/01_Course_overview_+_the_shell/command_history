@@ -1,0 +1,19 @@
+ 2051  ll
+ 2052  mkdir missing
+ 2053  cd missing/
+ 2054  ll
+ 2055  touch semester
+ 2056  echo '#!/bin/sh' | tee semester
+ 2057  echo 'curl --head --silent https://missing.csail.mit.edu' | tee -a semester
+ 2058  cat semester
+ 2059  ./semester
+ 2060  chmod +x semester
+ 2061  ./sme
+ 2062  ./semester
+ 2063  touch last-modified.txt | date -r semester > last-modified.txt
+ 2064  cat last-modified.txt
+ 2065  cat /sys/class/thermal/thermal_zone*/temp
+ 2066  history
+ 2067  history | tail -n10
+ 2068  history | tail -n20
+ 2069  history | tail -n 20
